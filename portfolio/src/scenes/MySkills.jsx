@@ -67,12 +67,12 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">
-                Languages and Frameworks
+                Languages & Frameworks
               </p>
             </div>
             <div className="w-1/2 md:3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
+          <p className="mt-10">
             Languages: JavaScript (ES6, ES7), Python, SQL, HTML5, CSS3,
             Assembly, C++ Frameworks: Django, React, Bootstrap
           </p>
@@ -98,7 +98,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
+          <p className="mt-10">
             System Design: Microservices, Monoliths, Domain-driven design,
             Blockchain Databases: SQLite, PostgreSQL
           </p>
@@ -124,7 +124,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
+          <p className="mt-10">
             Docker, Git, REST API, Insomnia, Redux Toolkit, RabbitMQ, CI/CD,
             Arduino, Autodesk
           </p>

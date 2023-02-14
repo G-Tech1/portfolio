@@ -1,4 +1,5 @@
 import NavBar from './scenes/Navbar';
+import Footer from './scenes/Footer';
 import Projects from './scenes/Projects';
 import MySkills from './scenes/MySkills';
 import Contact from './scenes/Contact';
@@ -7,6 +8,7 @@ import DotGroup from './scenes/DotGroup';
 import Landing from './scenes/Landing';
 import { useEffect, useState } from 'react';
 import useMediaQuery from './hooks/useMediaQuery';
+import { motion } from 'framer-motion';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -17,6 +19,7 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
+        setSelectedPage('home');
       }
       if (window.scrollY !== 0) {
         setIsTopOfPage(false);
@@ -34,16 +37,16 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && (
+        {/* {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
-        )}
+        )} */}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto">
         <MySkills />
       </div>
       <LineGradient />
@@ -54,6 +57,7 @@ function App() {
       <div className="w-5/6 mx-auto">
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

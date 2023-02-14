@@ -11,6 +11,18 @@ const SocialMediaIcons = () => {
       >
         <img alt="linkedin-link" src="../assets/linkedin.png" />
       </a>
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href="https://gitlab.com/GTech_"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          className="max-w-[33px]"
+          alt="linkedin-link"
+          src="../assets/gitlab.png"
+        />
+      </a>
     </div>
   );
 };
